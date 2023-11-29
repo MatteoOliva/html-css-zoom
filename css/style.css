@@ -10,6 +10,8 @@ header {
   width: 100%;
   display: flex;
   justify-content: end;
+  position: sticky;
+  z-index: 1;
 }
 .right-header1st {
   color: white;
@@ -32,4 +34,83 @@ header {
   width: 30px;
   text-align: center;
   line-height: 25px;
+}
+
+main {
+  background-color: black;
+  height: calc(100vh - 80px - 80px);
+  overflow: scroll;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+}
+.card {
+  position: relative;
+  padding: 5px;
+  width: calc(100% / 7);
+  min-width: 200px;
+}
+
+.img-content {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+}
+
+.footer {
+  height: 80px;
+  background-color: #222222;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
+  font-size: 25px;
+}
+.footer-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.footer-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.right-element {
+  height: 80px;
+  color: red;
+  text-align: center;
+  line-height: 75px;
+}
+
+div:nth-child(4) {
+  color: green;
+}
+
+.footer-testo {
+  color: white;
 }
